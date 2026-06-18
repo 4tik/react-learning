@@ -1,0 +1,80 @@
+/* =====================================================
+   TAILWIND CORE IMPORT (v4)
+===================================================== */
+@import "tailwindcss";
+
+@font-face {
+    font-family: "AnekBangla";
+    src: url("../fonts/AnekBangla-Bold.ttf") format("truetype"),
+        url("../fonts/AnekBangla-Medium.ttf") format("truetype"),
+        url("../fonts/AnekBangla-Regular.ttf") format("truetype"),
+        url("../fonts/AnekBangla-SemiBold.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* =====================================================
+   DESIGN SYSTEM VARIABLES
+   (Used for ThemeForest-level consistency)
+===================================================== */
+
+@layer base {
+    body {
+        @apply bg-gray-50 text-gray-800 m-5;
+        font-family: sans-serif;
+    }
+}
+
+
+/* =====================================================
+   COMPONENT SYSTEM (Reusable UI Classes)
+===================================================== */
+
+@layer utilities {
+
+    /* ---------------- BUTTON BASE ---------------- */
+    .btn {
+        @apply px-4 py-2 rounded-lg font-medium transition cursor-pointer inline-flex items-center gap-2;
+    }
+
+    /* Primary Action */
+    .btn-primary {
+        @apply bg-blue-600 hover:bg-blue-700 text-white;
+    }
+
+    /* Danger Action */
+    .btn-danger {
+        @apply bg-red-600 hover:bg-red-700 text-white;
+    }
+
+    /* Success Action */
+    .btn-success {
+        @apply bg-green-600 hover:bg-green-700 text-white;
+    }
+
+
+    /* ---------------- CARD ---------------- */
+    .card {
+        @apply bg-white shadow rounded-xl p-4;
+    }
+
+    /* ---------------- INPUT ---------------- */
+    .input-basic {
+        @apply flex h-10 w-full rounded-md border border-gray-400 bg-white px-3 py-2 text-sm text-gray-900 placeholder:text-gray-400 transition focus:outline-none focus:ring-1 focus:ring-gray-800;
+    }
+
+    /* ---------------- BADGE ---------------- */
+    .badge {
+        @apply text-xs px-2 py-1 rounded-full;
+    }
+
+    .badge-success {
+        @apply bg-green-100 text-green-700;
+    }
+
+    .badge-danger {
+        @apply bg-red-100 text-red-700;
+    }
+}
