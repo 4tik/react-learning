@@ -3,13 +3,38 @@
 ===================================================== */
 @import "tailwindcss";
 
+/* 1. Regular Style */
 @font-face {
-    font-family: "AnekBangla";
-    src: url("../fonts/AnekBangla-Bold.ttf") format("truetype"),
-        url("../fonts/AnekBangla-Medium.ttf") format("truetype"),
-        url("../fonts/AnekBangla-Regular.ttf") format("truetype"),
-        url("../fonts/AnekBangla-SemiBold.ttf") format("truetype");
-    font-weight: 100 900;
+    font-family: "anek-bangla";
+    src: url("../fonts/AnekBangla-Regular.ttf") format("truetype");
+    font-weight: 400; /* Standard Regular weight */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 2. Medium Style */
+@font-face {
+    font-family: "anek-bangla";
+    src: url("../fonts/AnekBangla-Medium.ttf") format("truetype");
+    font-weight: 500; /* Medium weight */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 3. SemiBold Style */
+@font-face {
+    font-family: "anek-bangla";
+    src: url("../fonts/AnekBangla-SemiBold.ttf") format("truetype");
+    font-weight: 600; /* SemiBold weight */
+    font-style: normal;
+    font-display: swap;
+}
+
+/* 4. Bold Style */
+@font-face {
+    font-family: "anek-bangla";
+    src: url("../fonts/AnekBangla-Bold.ttf") format("truetype");
+    font-weight: 700; /* Standard Bold weight */
     font-style: normal;
     font-display: swap;
 }
@@ -23,7 +48,7 @@
 @layer base {
     body {
         @apply bg-gray-50 text-gray-800 m-5;
-        font-family: sans-serif;
+        font-family: "anek-bangla", sans-serif;
     }
 }
 
